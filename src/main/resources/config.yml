@@ -1,0 +1,16 @@
+limit: 10000 # The maximum cost of a single teleport
+costPerBlock: 1 # How much money a single block of distance costs
+
+# Strings, you can use &6Color &bCodes
+# Do not remove the %s.
+
+noSuchPlayer: "No such player was found"
+poor: "You have insufficient funds"
+noPending: "No pending request was found"
+senderPoor: "Request sender cannot afford teleport"
+tpReq: "%s wants to teleport to you. /tpaccept to accept."
+tpReqHere: "%s wants to teleport to you to them. /tpaccept to accept."
+reqSentCost: "Request sent! Total cost if accepted: %s"
+reqAccept: "Request accepted! Teleporting..."
+acceptedCost: "Your teleportation request was accepted! You have been charged %s. Teleporting..."
+failedCost: "Your teleportation request was accepted, but you cannot afford it! Total cost: %s"

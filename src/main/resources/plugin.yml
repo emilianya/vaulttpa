@@ -1,0 +1,20 @@
+name: VaultTPA
+version: '${project.version}'
+main: xyz.skelly.vaulttpa.VaultTPA
+api-version: 1.18
+authors: [ Skelyl ]
+description: TPA functionality with distance based cost through Vault integration
+commands:
+  tpa:
+    description: Requests to teleport to another player
+    usage: "Usage: /tpa <player>"
+    permission: vaulttpa.tpa
+  tpahere:
+    description: Requests to teleport to another player to you
+    usage: "Usage: /tpahere <player>"
+    permission: vaulttpa.tpahere
+  tpaccept:
+    description: Accepts teleportation request
+    usage: "Usage: /tpaccept"
+    permission: vaulttpa.tpa
+    aliases: [tpyes, tpaaccept]
