@@ -1,8 +1,9 @@
 limit: 10000 # The maximum cost of a single teleport
 costPerBlock: 1 # How much money a single block of distance costs
+cooldownTime: 15 # cooldown in seconds
 
 # Strings, you can use &6Color &bCodes
-# Do not remove the %s.
+# Do not remove the %s and %d.
 
 noSuchPlayer: "No such player was found"
 poor: "You have insufficient funds"
@@ -14,3 +15,4 @@ reqSentCost: "Request sent! Total cost if accepted: %s"
 reqAccept: "Request accepted! Teleporting..."
 acceptedCost: "Your teleportation request was accepted! You have been charged %s. Teleporting..."
 failedCost: "Your teleportation request was accepted, but you cannot afford it! Total cost: %s"
+cooldown: "You cannot use this command yet. Cooldown remaining: %d seconds"

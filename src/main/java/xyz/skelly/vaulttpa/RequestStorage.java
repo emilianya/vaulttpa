@@ -11,21 +11,19 @@ public class RequestStorage {
 	static ArrayList<TpRequest> tpRequests = new ArrayList<TpRequest>();
 
 	public static TpRequest getRequest(UUID player) {
+		TpRequest req = null;
 		for (TpRequest i : tpRequests) {
 			if (i.sentTo == player) {
-				tpRequests.remove(i);
-				return i;
+				req = i;
+				break;
 			}
 		}
-		return null;
+		tpRequests.remove(req);
+		return req;
 	}
 
 	public static void createRequest(TpRequest request) {
-		for (TpRequest i : tpRequests) {
-			if (i.sentTo == request.sentTo) {
-				tpRequests.remove(i);
-			}
-		}
+		tpRequests.removeIf(req -> req.sentTo == request.sentTo);
 		tpRequests.add(request);
 	}
 }
